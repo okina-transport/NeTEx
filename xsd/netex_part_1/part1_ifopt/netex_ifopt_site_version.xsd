@@ -301,7 +301,7 @@ Rail transport, Roads and Road transport
 			<xsd:documentation>Elements of a SITE COMPONENT.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
-			<xsd:element name="SiteRef" type="SiteRefStructure" minOccurs="0">
+			<xsd:element name="SiteRef" type="SiteRefStructure" >
 				<xsd:annotation>
 					<xsd:documentation>Reference to parent of SITE, if any.</xsd:documentation>
 				</xsd:annotation>

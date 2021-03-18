@@ -284,7 +284,7 @@ Rail transport, Roads and Road transport
 			<xsd:documentation>Elements for INTERCHANGE TRANSFER duration.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
-			<xsd:element name="StandardTransferTime" type="xsd:duration" minOccurs="0">
+			<xsd:element name="StandardTransferTime" type="xsd:duration" >
 				<xsd:annotation>
 					<xsd:documentation>Standard transfer  duration for INTERCHANGE.</xsd:documentation>
 				</xsd:annotation>

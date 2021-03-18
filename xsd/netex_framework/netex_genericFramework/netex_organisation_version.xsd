@@ -267,7 +267,7 @@ Rail transport, Roads and Road transport
 					<xsd:documentation>Contact details for ORGANISATION Private use.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="OrganisationType" type="OrganisationTypeListOfEnumerations" minOccurs="0">
+			<xsd:element name="OrganisationType" type="OrganisationTypeListOfEnumerations" minOccurs="1">
 				<xsd:annotation>
 					<xsd:documentation>Type of ORGANISATION.</xsd:documentation>
 				</xsd:annotation>

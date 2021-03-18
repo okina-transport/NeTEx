@@ -336,7 +336,7 @@ Rail transport, Roads and Road transport
 			<xsd:documentation>Property Elements of a STOP PLACE COMPONENT.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
-			<xsd:element name="TransportMode" type="VehicleModeEnumeration" minOccurs="0">
+			<xsd:element name="TransportMode" type="VehicleModeEnumeration">
 				<xsd:annotation>
 					<xsd:documentation>Primary MODE of Vehicle transport associated by this component.</xsd:documentation>
 				</xsd:annotation>

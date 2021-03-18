@@ -696,7 +696,7 @@ Rail transport, Roads and Road transport
 					<xsd:documentation>Name of destination to show on side of VEHICLE.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="FrontText" type="MultilingualString" minOccurs="0">
+			<xsd:element name="FrontText" type="MultilingualString" >
 				<xsd:annotation>
 					<xsd:documentation>Name of destination to show on front of VEHICLE.</xsd:documentation>
 				</xsd:annotation>
