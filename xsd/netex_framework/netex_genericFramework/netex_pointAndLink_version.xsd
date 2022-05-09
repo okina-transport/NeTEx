@@ -149,7 +149,7 @@
           <xsd:documentation>Name of POINT.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="Location" type="LocationStructure" minOccurs="0">
+      <xsd:element name="Location" type="LocationStructure" minOccurs="1">
         <xsd:annotation>
           <xsd:documentation>The position of a POINT with a reference to a given LOCATING SYSTEM (e. g. coordinates).</xsd:documentation>
         </xsd:annotation>

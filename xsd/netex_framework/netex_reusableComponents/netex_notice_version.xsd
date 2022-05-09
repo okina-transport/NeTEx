@@ -173,11 +173,6 @@
       </xsd:element>
       <xsd:element ref="PrivateCode" minOccurs="0"/>
       <xsd:element ref="TypeOfNoticeRef" minOccurs="0"/>
-      <xsd:element name="CanBeAdvertised" type="xsd:boolean" minOccurs="0">
-        <xsd:annotation>
-          <xsd:documentation>Whether NOTICE is advertised to public. This may be overridden on an assignment.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
     </xsd:sequence>
   </xsd:group>
 	<!-- ======================================================================= -->
@@ -239,11 +234,6 @@
       <xsd:documentation>Elements for DELIVERY VARIANT.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="ParentRef" type="VersionOfObjectRefStructure" minOccurs="0">
-        <xsd:annotation>
-          <xsd:documentation>Parent of DELIVERY VARIANT.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
       <xsd:element name="DeliveryVariantMediaType" type="DeliveryVariantTypeEnumeration" default="other" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation>Type of DELIVERY VARIANT.</xsd:documentation>

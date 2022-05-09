@@ -400,7 +400,7 @@
         <xsd:restriction base="ValidBetween_VersionStructure">
           <xsd:sequence>
             <xsd:sequence>
-              <xsd:element name="FromDate" type="xsd:dateTime" minOccurs="0">
+              <xsd:element name="FromDate" type="xsd:dateTime" minOccurs="1">
                 <xsd:annotation>
                   <xsd:documentation>Start date of AVAILABILITY CONDITION.</xsd:documentation>
                 </xsd:annotation>

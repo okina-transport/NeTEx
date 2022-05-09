@@ -218,7 +218,7 @@
         </xsd:annotation>
       </xsd:element>
       <xsd:element ref="RequestorRef"/>
-      <xsd:element name="MessageIdentifier" type="MessageQualifierStructure" minOccurs="0">
+      <xsd:element name="MessageIdentifier" type="MessageQualifierStructure" minOccurs="1">
         <xsd:annotation>
           <xsd:documentation>Arbitrary unique identifier that can be used to reference this message in subsequent interactions.</xsd:documentation>
         </xsd:annotation>
@@ -380,7 +380,7 @@
       <xsd:documentation>Status Information for overall request. Specific error conditions will be given on each individual request.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="Status" type="xsd:boolean" default="true" minOccurs="0">
+      <xsd:element name="Status" type="xsd:boolean" default="true" minOccurs="1">
         <xsd:annotation>
           <xsd:documentation>Whether the complerte request could be processed successfully or not. Default is 'true'. If any of the individual requests within the delivery failed, should be set to '
             false'.</xsd:documentation>
@@ -434,7 +434,7 @@
       <xsd:documentation>Status Information for individual request.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element ref="Status" minOccurs="0"/>
+      <xsd:element ref="Status" minOccurs="1"/>
       <xsd:element name="ErrorCondition" type="ServiceDeliveryErrorConditionStructure" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation>Description of any error or warning condition.</xsd:documentation>
@@ -553,7 +553,7 @@
       <xsd:documentation>Endpoint reference proprerties for response message: participant and SIRI service type are given by context.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="RequestMessageRef" type="MessageQualifierStructure" minOccurs="0">
+      <xsd:element name="RequestMessageRef" type="MessageQualifierStructure" minOccurs="1">
         <xsd:annotation>
           <xsd:documentation>Arbitrary unique reference to the request which gave rise to this message.</xsd:documentation>
         </xsd:annotation>
@@ -745,7 +745,7 @@
           <xsd:documentation>An arbitrary unique reference associated with the response which may be used to reference it.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="RequestMessageRef" type="MessageRefStructure" minOccurs="0">
+      <xsd:element name="RequestMessageRef" type="MessageRefStructure" minOccurs="1">
         <xsd:annotation>
           <xsd:documentation>Reference to an arbitrary unique identifier associated with the request which gave rise to this response.</xsd:documentation>
         </xsd:annotation>
