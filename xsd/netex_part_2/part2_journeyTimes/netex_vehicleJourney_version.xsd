@@ -118,23 +118,6 @@
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
-  <xsd:complexType name="vehicleJourneyStopAssignmentsInFrame_RelStructure">
-    <xsd:annotation>
-      <xsd:documentation>Type for containment in frame of VEHICLE JOURNEY STOP ASSIGNMENTs.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="containmentAggregationStructure">
-        <xsd:sequence>
-          <xsd:element ref="VehicleJourneyStopAssignment" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:documentation>The allocation of a SCHEDULED STOP POINT (i.e. a SCHEDULED STOP POINT of a SERVICE PATTERN or JOURNEY PATTERN) to a specific STOP PLACE or QUAY, for either a Passenger
-                JOURNEY or VEHICLE SERVICE.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
 	<!-- === BEHICL JOURNEY =================================================== -->
   <xsd:element name="VehicleJourney_" type="Journey_VersionStructure" abstract="true" substitutionGroup="Journey_">
     <xsd:annotation>
@@ -686,7 +669,7 @@
       <xsd:element ref="PassengerStopAssignmentRef" minOccurs="0"/>
     </xsd:sequence>
   </xsd:group>
-  <xsd:complexType name="VehicleJourneyStopAssignmentsInFrame_RelStructure">
+  <xsd:complexType name="vehicleJourneyStopAssignmentsInFrame_RelStructure">
     <xsd:annotation>
       <xsd:documentation>Type for containment in frame of VEHICLE JOURNEY STOP ASSIGNMENTs.</xsd:documentation>
     </xsd:annotation>
